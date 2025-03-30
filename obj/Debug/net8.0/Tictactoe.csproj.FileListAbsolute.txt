@@ -1,0 +1,14 @@
+D:\work\references\tic_tac_toe_game\Tictactoe\bin\Debug\net8.0\Tictactoe.exe
+D:\work\references\tic_tac_toe_game\Tictactoe\bin\Debug\net8.0\Tictactoe.deps.json
+D:\work\references\tic_tac_toe_game\Tictactoe\bin\Debug\net8.0\Tictactoe.runtimeconfig.json
+D:\work\references\tic_tac_toe_game\Tictactoe\bin\Debug\net8.0\Tictactoe.dll
+D:\work\references\tic_tac_toe_game\Tictactoe\bin\Debug\net8.0\Tictactoe.pdb
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.AssemblyInfoInputs.cache
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.AssemblyInfo.cs
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.csproj.CoreCompileInputs.cache
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.dll
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\refint\Tictactoe.dll
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.pdb
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.genruntimeconfig.cache
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\ref\Tictactoe.dll
