@@ -17,6 +17,8 @@ namespace tictactoe
 
   static int turns = 0;
 
+  static char playerwin = 'D';
+
   static void setField()
   {
    Console.Clear();
@@ -100,151 +102,84 @@ namespace tictactoe
    {
     if ((field[0, 0] == field[0, 1]) && (field[0, 1] == field[0, 2]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[1, 0] == field[1, 1]) && (field[1, 1] == field[1, 2]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[2, 0] == field[2, 1]) && (field[2, 1] == field[2, 2]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[2, 0] == field[2, 1]) && (field[2, 1] == field[2, 2]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[0, 0] == field[1, 0]) && (field[1, 0] == field[2, 0]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[0, 1] == field[1, 1]) && (field[1, 1] == field[2, 1]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[0, 2] == field[1, 2]) && (field[1, 2] == field[2, 2]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[0, 0] == field[1, 1]) && (field[1, 1] == field[2, 2]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
     else if ((field[0, 2] == field[1, 1]) && (field[1, 1] == field[2, 0]))
     {
-     if (element == 'O')
-     {
-      setField();
-      Console.WriteLine("Player 1 Wins");
-     }
-     else if (element == 'X')
-     {
-      setField();
-      Console.WriteLine("Player 2 wins");
-     }
      status = false;
+     playerwin = element;
     }
    }
    return status;
   }
   static void Main(string[] args)
   {
-   bool player1 = true;
+   bool player1 = true, match = true;
    char[] playerSymbol = { 'X', 'O' };
    do
    {
     setField();
-    if (player1)
+    if(turns == 10) {
+     match = false;
+    }else {
+     match  = checkVictory(playerSymbol);
+    }
+    if (player1 && match)
     {
      turnPlayer("Player 1", 'X');
      player1 = false;
     }
-    else
+    else if(!(player1) && match)
     {
      turnPlayer("Player 2", 'O');
      player1 = true;
     }
-   } while (checkVictory(playerSymbol));
+    Console.WriteLine(match);
+   } while (match);
+
+   if(playerwin == 'X') {
+    Console.WriteLine("Player 1 Win!");
+   }else if (playerwin == 'O') {
+    Console.WriteLine("Player 2 Win!");
+   }else {
+    Console.WriteLine("Match Draw!");
+   }
   }
  }
 }

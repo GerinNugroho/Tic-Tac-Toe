@@ -12,3 +12,4 @@ D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\refint\Tictactoe.
 D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.pdb
 D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.genruntimeconfig.cache
 D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\ref\Tictactoe.dll
+D:\work\references\tic_tac_toe_game\Tictactoe\obj\Debug\net8.0\Tictactoe.sourcelink.json
